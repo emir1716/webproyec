@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de auto evaluacion</title>
+    <style>
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #5934ad;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5934ad;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/enviar_formulario" method="POST">
+        <table>
+            <tr>
+                <th colspan="2">Formulario de autoevaluacion</th>
+            </tr>
+            <tr>
+                <td><img src="im1.png" alt=im1.png></td>
+                <td><input type="file" name="imagen_usuario" accept="im1.png"></td>
+            </tr>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="nombre" maxlength="50" placeholder="Ingrese su nombre completo" required></td>
+            </tr>
+            <tr>
+                <td>que etiquetas sirve para un hiper vinculo</td>
+                <td><input type="ingrese una opcion" name="ingrese una opcion" placeholder="Ingrese una opcion" ></td>
+            </tr>
+            <tr>
+                <td>para que sirve el atrivuto em</td>
+                <td>
+                    <select name="pais" required>
+                        <option value="">Seleccione la  opcion</option>
+                        <option value="mexico">maraca con enfasis </option>
+                        <option value="argentina">letras en negritas </option>
+                        <option value="espana">estilo de hojas css</option>
+                        <option value="colombia">style to page </option>
+    
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Que atributo permite cambiar el tipo de fuente y parrafo</td>
+                <td>
+                    <select name="pais" required>
+                        <option value="">Seleccione la  opcion</option>
+                        <option value="mexico">Face</option>
+                        <option value="argentina">N</option>
+                        <option value="espana">Body</option>
+                        <option value="colombia">Colum</option>
+                        <option value="otros">Action</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>¿Qué significa HTML? </td>
+                <td>
+                    <input type="checkbox" name="genero" value="accion"> Lenguaje de Marcas de Hipertexto<br>
+                    <input type="checkbox" name="genero" value="comedia"> nose<br>
+                    <input type="checkbox" name="genero" value="drama"> lenjuage de micro chips de texto<br>
+                    <input type="checkbox" name="genero" value="horror"> hours the mid light<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Que etiqueta html forma parte de las estructuras basica</td>
+                <td>
+                    <input type="checkbox" name="genero" value="accion"> html<br>
+                    <input type="checkbox" name="genero" value="comedia"> carson<br>
+                    <input type="checkbox" name="genero" value="drama"> type<br>
+                    <input type="checkbox" name="genero" value="horror"> furtar<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Comentarios:</td>
+                <td><textarea name="comentarios" rows="5" placeholder="Escriba sus comentarios aquí"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+					
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+
+</body>
+</html>

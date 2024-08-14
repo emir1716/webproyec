@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de auto evaluacion</title>
+	<body bgcolor=black text=white face=arial>
+    <style>
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #5934ad;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5934ad;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/enviar_formulario" method="POST">
+        <table>
+            <tr>
+                <th colspan="2"><font color=black>Autoevaluacion</th></font>
+            </tr>
+            <tr>
+                <td><img src="ttk.png" alt=ttk.png></td>
+            </tr>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="nombre" maxlength="100" placeholder="Ingrese su nombre completo" required></td>
+            </tr>
+            <tr>
+                <td>¿Que es tik tok?</td>
+                <td><input type="ingrese su respuesta" name="ingrese su respuesta" placeholder="Ingrese su respuesta" ></td>
+            </tr>
+            <tr>
+                <td>¿Cual fue el primer nombre de tik tok?</td>
+                <td>
+                    <select name="pais" required>
+					    <option value="espana">seleciona una opcion</option>
+                        <option value="">musica.ly</option>
+                        <option value="mexico">flor de maria </option>
+                        <option value="argentina">dance one </option>
+                        <option value="espana">hip tok</option>
+    
+                    </select>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>¿Cuando salio Tik Tok? </td>
+                <td>
+                    <input type="checkbox" name="genero" value="accion"> 2014<br>
+                    <input type="checkbox" name="genero" value="comedia"> 2019<br>
+                    <input type="checkbox" name="genero" value="drama"> 2016<br>
+                    <input type="checkbox" name="genero" value="horror"> 2022<br>
+                </td>
+            </tr>
+            <tr>
+                <td>¿En que año tuvo mas impacto</td>
+                <td>
+                    <input type="checkbox" name="genero" value="accion"> 2019<br>
+                    <input type="checkbox" name="genero" value="comedia"> 2024<br>
+                    <input type="checkbox" name="genero" value="drama"> 2021<br>
+                    <input type="checkbox" name="genero" value="horror"> 2022<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Comentarios:</td>
+                <td><textarea name="comentarios" rows="5" placeholder="Escriba sus comentarios aquí"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+
+</body>
+</html>
